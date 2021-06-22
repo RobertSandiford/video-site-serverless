@@ -80,7 +80,7 @@ functions:
     handler: src/upload.upload
     events:
       - httpApi:
-          method: get
+          method: post
           path: /upload
 #  hello:
 #    handler: src/handler.hello

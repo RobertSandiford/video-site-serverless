@@ -12,6 +12,8 @@ module.exports.find = async (event) => {
 
     if ( ! paramExists(event, 'name') )
         return response({
+            result: "Error",
+            errorCode: "missing filename input",
             message: 'Find: No file name specified',
             input: event,
         })
@@ -22,14 +24,16 @@ module.exports.find = async (event) => {
     
     if ( ! file ) {
         return response({
+            result: "Not Found",
             message: 'Find: File not found',
             input: event,
         })
     }
 
     return response({
+        result: "Found",
         message: 'Find: File found',
-        fileContents : file.contents,
+        file: file,
         input: event,
     })
 };

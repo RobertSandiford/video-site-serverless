@@ -32,8 +32,8 @@ module.exports.head = head = async function head(key) {
             return response
         } catch (e) {
             if ( e.$metadata !== undefined && e.$metadata.httpStatusCode == 404 ) {
-                console.log("When getting file head: file not found");
-                console.log(JSON.stringify(e))
+                //console.log("When getting file head: file not found");
+                //console.log(JSON.stringify(e))
             }
             else {
                 console.log("Error getting file head: ", e);
@@ -69,7 +69,7 @@ module.exports.get = get = async function get(filename) {
             return file
         } catch (e) {
             if ( e.$metadata != undefined && e.$metadata.httpStatusCode == 404 ) {
-                console.log("When retrieving file: file not found");
+                //console.log("When retrieving file: file not found");
             }
             else {
                 console.log("Error retrieving file: ", e);
@@ -111,7 +111,7 @@ module.exports.put = put = async function put(key, contentType, contents) {
     return false
 }
 
-module.exports.scratch = scratch = async function scratch(key) {
+module.exports.del = del = async function del(key) {
 
     try {
         const params = {
