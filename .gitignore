@@ -1,5 +1,6 @@
 node_modules
 aws-credentials.txt
+/.serverless/cloudformation-template-create-stack.json
 /.serverless/cloudformation-template-update-stack.json
 /.serverless/serverless-state.json
 /.serverless/video-site-serverless.zip
