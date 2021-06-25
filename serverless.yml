@@ -64,24 +64,31 @@ provider:
 #    - include-me-dir/**
 
 functions:
+
   index:
     handler: src/index.index
     events:
       - httpApi:
           method: get
           path: /
+    memorySize: 128 # MB
+
   find:
     handler: src/find.find
     events:
       - httpApi:
           method: get
           path: /find
+    timeout: 60 # sec
+
   upload:
     handler: src/upload.upload
     events:
       - httpApi:
           method: post
           path: /upload
+    timeout: 60 # sec
+
 #  hello:
 #    handler: src/handler.hello
 #    The following are a few example events you can configure
