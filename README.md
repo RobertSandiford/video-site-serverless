@@ -1,4 +1,4 @@
-# File uploads / downloads with AWS lambda and S3
+# File uploads / downloads with AWS lambda, S3, DynamoDB
 
 Using:
 * Serverless framework
