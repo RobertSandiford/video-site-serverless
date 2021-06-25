@@ -20,6 +20,7 @@ jobs:
     env:
       # SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
       # or if using AWS credentials directly
+      app_aws_region:  ${{ secrets.app_aws_region }}
       app_s3_bucket_name:  ${{ secrets.app_s3_bucket_name }}
       app_s3_bucket_region: ${{ secrets.app_s3_bucket_region }}
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
