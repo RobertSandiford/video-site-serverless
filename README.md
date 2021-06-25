@@ -1,7 +1,10 @@
-# File uploads / downloads with AWS lambda and S3
+# File uploads / downloads with AWS lambda, S3, DynamoDB
 
 Using:
-Serverless framework
-Node.js
-AWS Lambda
-S3
+* Serverless framework
+* Node.js
+* AWS Lambda
+* AWS S3
+* AWS DynamoDB
+* Jest
+* Github workflows CI
