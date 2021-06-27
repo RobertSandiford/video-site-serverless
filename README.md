@@ -1,4 +1,4 @@
-# File uploads / downloads with AWS lambda, S3, DynamoDB
+# AWS Lambda functions, S3, DynamoDB, CI/CD with github workflows
 
 Using:
 * Serverless framework
